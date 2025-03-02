@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/b115743184.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-slate-800 ">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-100 p-4 ">
+    <nav class="flex justify-between  ">
+        <div class="flex justify-center items-center ">
+            <img class="w-16" src="../Resources/assets/Group.png" alt="">
+            <div>
+                <h1 class="text-3xl font-bold"><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span>3500</span></h1>
+                <p class="text-gray-500">Available Balance</p>
+            </div>
+        </div>
+        <button class="btn border-2 border-gray-200 "><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button>
+    </nav>
+
+    <div class="my-5">
+        <h1 class="text-3xl font-bold ">Welcome to TakaGo ! </h1>
+        <p class="text-gray-500 text-sm mt-2">Enjoy easy and convenient financial services with us. Cashout charge is low and other facilities</p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-4 ite">
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/wallet1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Add Money</h2>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/transaction1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Transactions</h2>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/send1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Cashout</h2>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/purse1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Pay Bill</h2>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/money1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Transfer Money</h2>
+        </div>
+        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+            <img class="mx-auto" src="../Resources/assets/bonus1.png" alt="">
+            <h2 class="font-bold text-sm mt-2">Get Bonus</h2>
+        </div>
+        
+    </div>
+
+    <div class="my-5" >
+        <h1 class="font-bold">Add Money</h1>
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-xl">
+                <form class="card-body">
+                    <select class="select w-full max-w-xs">
+                        <option disabled selected>Select Bank</option>
+                        <option>Bkash</option>
+                        <option>Nagad</option>
+                        <option>Rocket</option>
+                        <option>IBBL</option>
+                        <option>DBBL</option>
+                      </select>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Account Number</span>
+                    </label>
+                    <input type="number" placeholder="Enter Your Account Number" class="input " required />
+                  </div>
+                  <div class="form-control">
+                    <label value = class="label">
+                      <span class="label-text" value ='1234'>PIN</span>
+                    </label>
+                    <input type="number" placeholder="Enter Your PIN" class="input" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button class="btn bg-blue-600 border-none text-white">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    </section>
+</body>
+</html>

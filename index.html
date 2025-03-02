@@ -7,8 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>saifur rahman
-    </h1>
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-100 ">
+    <header>
+        <nav class="flex justify-center items-center">
+            <div class="mt-10 relative flex justify-center items-center w-9/12 ">
+                <img class="absolute w-48 top-0" src="Resources/assets/bg.png" alt="">
+                <img class="absolute top-12 w-16" src="Resources/assets/Group.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <!-- login section -->
+    <div class="hero min-h-screen">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg">
+            <form class="card-body">
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">Acccount Number</span>
+                </label>
+                <input type="number" placeholder="Type your number" class="input input-bordered" required />
+              </div>
+              <div class="form-control">
+                <label class="label">
+                  <span class="label-text">PIN</span>
+                </label>
+                <input type="text" placeholder="Type your PIN" class="input input-bordered" required />
+                <label class="label">
+                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                </label>
+              </div>
+              <div class="form-control mt-6">
+                <button id="login-btn" class="btn bg-slate-800 text-white">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
 </body>
 </html>
