@@ -14,11 +14,11 @@
         <div class="flex justify-center items-center ">
             <img class="w-16" src="../Resources/assets/Group.png" alt="">
             <div>
-                <h1 class="text-3xl font-bold"><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span>3500</span></h1>
+                <h1 class="text-3xl font-bold"><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="balance">3500</span></h1>
                 <p class="text-gray-500">Available Balance</p>
             </div>
         </div>
-        <button class="btn border-2 border-gray-200 "><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button>
+        <button id="logout-btn" class="btn border-2 border-gray-200 "><i class="fa-solid fa-arrow-right-from-bracket"></i>Log Out</button>
     </nav>
 
     <div class="my-5">
@@ -27,7 +27,7 @@
     </div>
 
     <div class="grid grid-cols-3 gap-4 ite">
-        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+        <div id="add-money-box" class="border-2 border-gray-300 rounded-lg p-4 text-center cursor-pointer hover:bg-slate-300">
             <img class="mx-auto" src="../Resources/assets/wallet1.png" alt="">
             <h2 class="font-bold text-sm mt-2">Add Money</h2>
         </div>
@@ -35,7 +35,7 @@
             <img class="mx-auto" src="../Resources/assets/transaction1.png" alt="">
             <h2 class="font-bold text-sm mt-2">Transactions</h2>
         </div>
-        <div class="border-2 border-gray-300 rounded-lg p-4 text-center">
+        <div id="cashout-box" class="border-2 border-gray-300 rounded-lg p-4 text-center cursor-pointer hover:bg-slate-300">
             <img class="mx-auto" src="../Resources/assets/send1.png" alt="">
             <h2 class="font-bold text-sm mt-2">Cashout</h2>
         </div>
@@ -54,7 +54,7 @@
         
     </div>
 
-    <div class="my-5" >
+    <div id="add-money" class="my-5" >
         <h1 class="font-bold">Add Money</h1>
         <div class="">
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -72,25 +72,70 @@
                     <label class="label">
                       <span class="label-text">Account Number</span>
                     </label>
-                    <input type="number" placeholder="Enter Your Account Number" class="input " required />
+                    <input value="123456789" type="number" placeholder="Enter Your Account Number" class="input " required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="amount" type="number" placeholder="Enter Your Amount" class="input " required />
                   </div>
                   <div class="form-control">
                     <label value = class="label">
                       <span class="label-text" value ='1234'>PIN</span>
                     </label>
-                    <input type="number" placeholder="Enter Your PIN" class="input" required />
+                    <input id="pin" value="1234" type="number" placeholder="Enter Your PIN" class="input" required />
                     <label class="label">
                       <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button class="btn bg-blue-600 border-none text-white">Login</button>
+                    <button id="add-money-btn" class="btn bg-blue-600 border-none text-white">Add Money</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
     </div>
+    <div id="cashout" class="my-5" >
+        <h1 class="font-bold">Cashout</h1>
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card w-full max-w-sm shrink-0 shadow-xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Account Number</span>
+                    </label>
+                    <input value="123456789" type="number" placeholder="Enter Your Account Number" class="input " required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="cashout-amount" type="number" placeholder="Enter Your Amount" class="input " required />
+                  </div>
+                  <div class="form-control">
+                    <label value = class="label">
+                      <span class="label-text" value ='1234'>PIN</span>
+                    </label>
+                    <input id="cashout-pin" value="1234" type="number" placeholder="Enter Your PIN" class="input" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashout-btn" class="btn bg-blue-600 border-none text-white">Cashout</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+
     </section>
+    <script src="add-money.js"></script>
+    <script src="toggle.js"></script>
+    <script src="cashout.js"></script>
 </body>
 </html>

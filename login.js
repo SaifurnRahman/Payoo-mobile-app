@@ -6,7 +6,7 @@ document.getElementById('login-btn').addEventListener('click', function (event) 
   const convertedPin = parseInt(pin)
   if(accountNumber.length === 9){
     if (convertedPin === 1234){
-      window.location.href = 'main/index.html'
+      window.location.href = 'main/main.html'
     }else{
       alert('pin thick nai')
     }
